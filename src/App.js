@@ -8,7 +8,7 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    // Load tasks from local storage on component mount
+    
     const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
     setTasks(storedTasks);
   }, []);

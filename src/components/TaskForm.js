@@ -7,13 +7,13 @@ const TaskForm = ({ addTask }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (taskName.trim() === '') {
-      alert('Please enter a task name.'); // Show an alert for empty task name
+      alert('Please enter a task name.'); 
       return;
     }
     const newTask = {
       id: new Date().getTime(),
       name: taskName,
-      description: taskDescription, // Add task description to the task object
+      description: taskDescription, 
       completed: false,
     };
     addTask(newTask);

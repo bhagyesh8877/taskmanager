@@ -14,7 +14,7 @@ const TaskItem = ({ task, markTaskComplete, deleteTask, editTask }) => {
 
   const handleSaveEdit = () => {
     if (editedTaskName.trim() === '') {
-      alert('Please enter a task name.'); // Show an alert for empty task name
+      alert('Please enter a task name.'); 
       return;
     }
     editTask(task.id, editedTaskName, editedTaskDescription);
@@ -31,7 +31,7 @@ const TaskItem = ({ task, markTaskComplete, deleteTask, editTask }) => {
     setIsFadeOut(true);
     setTimeout(() => {
       markTaskComplete(task.id);
-    }, 300); // Adjust the duration to match your transition duration
+    }, 300); 
   };
 
   return (

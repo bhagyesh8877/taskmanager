@@ -38,7 +38,11 @@ const App = () => {
   const editTask = (taskId, newName, newDescription) => {
     const updatedTasks = tasks.map((task) =>
       task.id === taskId
-        ? { ...task, name: newName, description: newDescription }
+        ? {
+            ...task,
+            name: newName !== undefined ? newName : task.name,
+            description: newDescription !== undefined ? newDescription : task.description,
+          }
         : task
     );
     saveTasksToLocalStorage(updatedTasks);

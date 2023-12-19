@@ -1,7 +1,7 @@
 import React from 'react';
 import TaskItem from './TaskItem';
 
-const TaskList = ({ tasks, markTaskComplete, deleteTask, editTaskName }) => {
+const TaskList = ({ tasks, markTaskComplete, deleteTask, editTask }) => {
   return (
     <ul className="list-group">
       {tasks.map((task) => (
@@ -10,7 +10,7 @@ const TaskList = ({ tasks, markTaskComplete, deleteTask, editTaskName }) => {
           task={task}
           markTaskComplete={markTaskComplete}
           deleteTask={deleteTask}
-          editTaskName={editTaskName}
+          editTask={editTask}
         />
       ))}
     </ul>

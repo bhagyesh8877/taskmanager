@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+ */
+
+ .App {
+  text-align: center;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+button {
+  margin-left: 10px;
+}
+
+li:hover {
+  background-color: #f2f2f2;
+}
+
+input[type="text"] {
+  margin-right: 10px;
 }
